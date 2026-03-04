@@ -7,13 +7,14 @@
   <meta name="description" content="Personal homepage of Milton Zhou." />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand">
         <a href="#home">Milton Zhou</a>
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#publications">Publications</a>
       </nav>
@@ -21,21 +22,22 @@
   </header>
 
   <main class="container page" id="home">
+    <!-- Left column: profile -->
     <aside class="sidebar">
       <div class="card profile">
         <div class="avatar">
-          <img src="assets/profile.jpg" alt="Profile photo (placeholder)" />
+          <img src="assets/profile.jpg" alt="Profile photo" />
         </div>
 
         <h1 class="name">Milton Zhou</h1>
         <div class="title">Role Title (placeholder)</div>
         <div class="affil">Institution (placeholder) · Location (placeholder)</div>
 
-        <div class="links">
-          <a href="#" onclick="return false;">Email (placeholder)</a>
-          <a href="#" onclick="return false;">GitHub (placeholder)</a>
-          <a href="#" onclick="return false;">Scholar (placeholder)</a>
-          <a href="#" onclick="return false;">CV (placeholder)</a>
+        <div class="links" aria-label="Profile links">
+          <a href="mailto:placeholder@example.com">Email</a>
+          <a href="#" onclick="return false;">GitHub</a>
+          <a href="#" onclick="return false;">Google Scholar</a>
+          <a href="#" onclick="return false;">CV</a>
         </div>
 
         <div class="small">
@@ -45,12 +47,12 @@
       </div>
     </aside>
 
+    <!-- Right column: content -->
     <section class="content">
       <section class="card" id="about">
         <h2>About</h2>
         <p class="lead">
           This is placeholder text. Replace with a short bio (3–5 sentences) later.
-          For now it’s intentionally generic.
         </p>
         <p>
           Additional placeholder paragraph. Add details about your work, interests, and collaborations later.
@@ -65,7 +67,9 @@
 
         <div class="pub">
           <div class="pub-title">Placeholder Paper Title One</div>
-          <div class="pub-meta"><strong>Milton Zhou</strong>, Coauthor A, Coauthor B. Venue (placeholder), 20XX.</div>
+          <div class="pub-meta">
+            <strong>Milton Zhou</strong>, Coauthor A, Coauthor B. Venue (placeholder), 20XX.
+          </div>
           <div class="pub-links">
             <a href="#" onclick="return false;">paper</a>
             <a href="#" onclick="return false;">code</a>
@@ -75,7 +79,9 @@
 
         <div class="pub">
           <div class="pub-title">Placeholder Paper Title Two</div>
-          <div class="pub-meta"><strong>Milton Zhou</strong>, Coauthor A. Under review (placeholder), 20XX.</div>
+          <div class="pub-meta">
+            <strong>Milton Zhou</strong>, Coauthor A. Under review (placeholder), 20XX.
+          </div>
           <div class="pub-links">
             <a href="#" onclick="return false;">preprint</a>
           </div>
@@ -85,7 +91,7 @@
       <footer class="footer">
         <span>© <span id="year"></span> Milton Zhou</span>
         <span class="dot">·</span>
-        <span class="muted">Placeholder site content.</span>
+        <span class="muted">Updated: <span id="updated"></span></span>
       </footer>
     </section>
   </main>
