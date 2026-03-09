@@ -1,596 +1,304 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>PLACEHOLDER_NAME</title>
-    <meta
-      name="description"
-      content="Academic homepage of PLACEHOLDER_NAME"
-    />
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav-container">
-        <a href="#home" class="site-name">PLACEHOLDER_NAME</a>
-        <nav class="nav">
-          <a href="#home" class="nav-link" data-route="home">Home</a>
-          <a
-            href="#publications"
-            class="nav-link"
-            data-route="publications"
-          >
-            Publications
-          </a>
-        </nav>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PLACEHOLDER_NAME</title>
+  <meta name="description" content="Personal homepage of PLACEHOLDER_NAME." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <a href="#home">PLACEHOLDER_NAME</a>
       </div>
-    </header>
+      <nav class="nav" aria-label="Primary">
+        <a href="#home" data-route="home">Home</a>
+        <a href="#publications-page" data-route="publications-page">Publications</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <!-- HOME PAGE -->
-      <section id="home-page" class="page active">
-        <section class="hero section">
-          <div class="container">
-            <h1 class="hero-title">PLACEHOLDER_NAME</h1>
+  <!-- HOME PAGE -->
+  <main class="container page route-page" id="home-page">
+    <!-- Left column -->
+    <aside class="sidebar">
+      <div class="card profile">
+        <div class="avatar">
+          <img src="assets/profile.jpg" alt="Profile photo" />
+        </div>
 
-            <div class="hero-grid">
-              <div class="hero-photo-wrap">
-                <img
-                  src="https://via.placeholder.com/420x520?text=PLACEHOLDER+PHOTO"
-                  alt="PLACEHOLDER_NAME profile photo"
-                  class="hero-photo"
-                />
-              </div>
+        <h1 class="name">PLACEHOLDER_NAME</h1>
+        <div class="title">PLACEHOLDER_ROLE</div>
+        <div class="affil">PLACEHOLDER_AFFILIATION · PLACEHOLDER_LOCATION</div>
 
-              <div class="hero-content">
-                <p class="hero-role">PLACEHOLDER_ROLE</p>
-                <p class="hero-affiliation">
-                  PLACEHOLDER_AFFILIATION
-                </p>
+        <div class="links" aria-label="Profile links">
+          <a href="mailto:PLACEHOLDER_EMAIL">Email</a>
+          <a href="PLACEHOLDER_GITHUB_LINK" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="PLACEHOLDER_SCHOLAR_LINK" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a href="PLACEHOLDER_CV_LINK" target="_blank" rel="noopener noreferrer">CV</a>
+        </div>
 
-                <p class="hero-bio">
-                  PLACEHOLDER_SHORT_BIO. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Integer posuere erat a
-                  ante. Donec ullamcorper nulla non metus auctor
-                  fringilla. Curabitur blandit tempus porttitor.
-                </p>
+        <div class="small">
+          <div><strong>Research:</strong> PLACEHOLDER_RESEARCH_INTERESTS</div>
+          <div class="mt8"><strong>Keywords:</strong> PLACEHOLDER_KEYWORD_1 · PLACEHOLDER_KEYWORD_2 · PLACEHOLDER_KEYWORD_3</div>
+        </div>
+      </div>
+    </aside>
 
-                <p class="hero-bio">
-                  PLACEHOLDER_RESEARCH_INTERESTS. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Vestibulum id ligula
-                  porta felis euismod semper.
-                </p>
-
-                <div class="tag-list">
-                  <span class="tag">PLACEHOLDER_RESEARCH_TAG_1</span>
-                  <span class="tag">PLACEHOLDER_RESEARCH_TAG_2</span>
-                  <span class="tag">PLACEHOLDER_RESEARCH_TAG_3</span>
-                </div>
-
-                <div class="social-links">
-                  <a href="mailto:PLACEHOLDER_EMAIL" aria-label="Email">
-                    Email
-                  </a>
-                  <a
-                    href="PLACEHOLDER_GOOGLE_SCHOLAR_LINK"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Google Scholar"
-                  >
-                    Scholar
-                  </a>
-                  <a
-                    href="PLACEHOLDER_GITHUB_LINK"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href="PLACEHOLDER_LINKEDIN_LINK"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                  >
-                    LinkedIn
-                  </a>
-                  <a
-                    href="PLACEHOLDER_CV_LINK"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="CV"
-                  >
-                    CV
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container">
-            <div class="info-card">
-              <div class="info-grid">
-                <div class="info-column">
-                  <h2 class="section-title">Education</h2>
-
-                  <div class="timeline-item">
-                    <div class="timeline-main">
-                      <h3 class="timeline-title">
-                        PLACEHOLDER_EDU_SCHOOL_1
-                      </h3>
-                      <p class="timeline-subtitle">
-                        PLACEHOLDER_EDU_DEPARTMENT_1
-                      </p>
-                      <p class="timeline-text">
-                        PLACEHOLDER_EDU_DEGREE_1
-                      </p>
-                    </div>
-                    <div class="timeline-date">
-                      PLACEHOLDER_EDU_DATE_1
-                    </div>
-                  </div>
-
-                  <div class="timeline-item">
-                    <div class="timeline-main">
-                      <h3 class="timeline-title">
-                        PLACEHOLDER_EDU_SCHOOL_2
-                      </h3>
-                      <p class="timeline-subtitle">
-                        PLACEHOLDER_EDU_DEPARTMENT_2
-                      </p>
-                      <p class="timeline-text">
-                        PLACEHOLDER_EDU_DEGREE_2
-                      </p>
-                    </div>
-                    <div class="timeline-date">
-                      PLACEHOLDER_EDU_DATE_2
-                    </div>
-                  </div>
-                </div>
-
-                <div class="info-column">
-                  <h2 class="section-title">Experience</h2>
-
-                  <div class="timeline-item">
-                    <div class="timeline-main">
-                      <h3 class="timeline-title">
-                        PLACEHOLDER_EXP_ORG_1
-                      </h3>
-                      <p class="timeline-subtitle">
-                        PLACEHOLDER_EXP_POSITION_1
-                      </p>
-                      <p class="timeline-text">
-                        PLACEHOLDER_EXP_DESC_1
-                      </p>
-                    </div>
-                    <div class="timeline-date">
-                      PLACEHOLDER_EXP_DATE_1
-                    </div>
-                  </div>
-
-                  <div class="timeline-item">
-                    <div class="timeline-main">
-                      <h3 class="timeline-title">
-                        PLACEHOLDER_EXP_ORG_2
-                      </h3>
-                      <p class="timeline-subtitle">
-                        PLACEHOLDER_EXP_POSITION_2
-                      </p>
-                      <p class="timeline-text">
-                        PLACEHOLDER_EXP_DESC_2
-                      </p>
-                    </div>
-                    <div class="timeline-date">
-                      PLACEHOLDER_EXP_DATE_2
-                    </div>
-                  </div>
-
-                  <div class="timeline-item">
-                    <div class="timeline-main">
-                      <h3 class="timeline-title">
-                        PLACEHOLDER_EXP_ORG_3
-                      </h3>
-                      <p class="timeline-subtitle">
-                        PLACEHOLDER_EXP_POSITION_3
-                      </p>
-                      <p class="timeline-text">
-                        PLACEHOLDER_EXP_DESC_3
-                      </p>
-                    </div>
-                    <div class="timeline-date">
-                      PLACEHOLDER_EXP_DATE_3
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section publications-preview">
-          <div class="container">
-            <div class="section-header">
-              <h2 class="section-title">Selected Publications</h2>
-              <a href="#publications" class="section-link">View All</a>
-            </div>
-
-            <div class="publication-list">
-              <article class="publication-card">
-                <div class="publication-image-wrap">
-                  <img
-                    src="https://via.placeholder.com/320x180?text=Paper+Image+1"
-                    alt="PLACEHOLDER_PAPER_TITLE_1 teaser"
-                    class="publication-image"
-                  />
-                </div>
-                <div class="publication-content">
-                  <h3 class="publication-title">
-                    PLACEHOLDER_PAPER_TITLE_1
-                  </h3>
-                  <p class="publication-authors">
-                    PLACEHOLDER_PAPER_AUTHORS_1
-                  </p>
-                  <p class="publication-venue">
-                    PLACEHOLDER_PAPER_VENUE_1
-                  </p>
-                  <p class="publication-summary">
-                    PLACEHOLDER_PAPER_SUMMARY_1. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit. Maecenas faucibus
-                    mollis interdum.
-                  </p>
-                  <div class="publication-links">
-                    <a
-                      href="PLACEHOLDER_PAPER_LINK_1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Paper
-                    </a>
-                    <a
-                      href="PLACEHOLDER_CODE_LINK_1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Code
-                    </a>
-                    <a
-                      href="PLACEHOLDER_PROJECT_LINK_1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Project
-                    </a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="publication-card">
-                <div class="publication-image-wrap">
-                  <img
-                    src="https://via.placeholder.com/320x180?text=Paper+Image+2"
-                    alt="PLACEHOLDER_PAPER_TITLE_2 teaser"
-                    class="publication-image"
-                  />
-                </div>
-                <div class="publication-content">
-                  <h3 class="publication-title">
-                    PLACEHOLDER_PAPER_TITLE_2
-                  </h3>
-                  <p class="publication-authors">
-                    PLACEHOLDER_PAPER_AUTHORS_2
-                  </p>
-                  <p class="publication-venue">
-                    PLACEHOLDER_PAPER_VENUE_2
-                  </p>
-                  <p class="publication-summary">
-                    PLACEHOLDER_PAPER_SUMMARY_2. Integer posuere erat a
-                    ante venenatis dapibus posuere velit aliquet.
-                  </p>
-                  <div class="publication-links">
-                    <a
-                      href="PLACEHOLDER_PAPER_LINK_2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Paper
-                    </a>
-                    <a
-                      href="PLACEHOLDER_CODE_LINK_2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Code
-                    </a>
-                    <a
-                      href="PLACEHOLDER_PROJECT_LINK_2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Project
-                    </a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="publication-card">
-                <div class="publication-image-wrap">
-                  <img
-                    src="https://via.placeholder.com/320x180?text=Paper+Image+3"
-                    alt="PLACEHOLDER_PAPER_TITLE_3 teaser"
-                    class="publication-image"
-                  />
-                </div>
-                <div class="publication-content">
-                  <h3 class="publication-title">
-                    PLACEHOLDER_PAPER_TITLE_3
-                  </h3>
-                  <p class="publication-authors">
-                    PLACEHOLDER_PAPER_AUTHORS_3
-                  </p>
-                  <p class="publication-venue">
-                    PLACEHOLDER_PAPER_VENUE_3
-                  </p>
-                  <p class="publication-summary">
-                    PLACEHOLDER_PAPER_SUMMARY_3. Aenean lacinia bibendum
-                    nulla sed consectetur.
-                  </p>
-                  <div class="publication-links">
-                    <a
-                      href="PLACEHOLDER_PAPER_LINK_3"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Paper
-                    </a>
-                    <a
-                      href="PLACEHOLDER_CODE_LINK_3"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Code
-                    </a>
-                    <a
-                      href="PLACEHOLDER_PROJECT_LINK_3"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Project
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
+    <!-- Right column -->
+    <section class="content">
+      <!-- Block 1 -->
+      <section class="card" id="about">
+        <h2>About</h2>
+        <p class="lead">
+          PLACEHOLDER_SHORT_BIO_LINE_1. Replace this with a concise introduction to who you are, what you work on, and what your current research interests are.
+        </p>
+        <p>
+          PLACEHOLDER_SHORT_BIO_LINE_2. This paragraph can describe your broader academic background, current projects, and future directions.
+        </p>
       </section>
 
-      <!-- PUBLICATIONS PAGE -->
-      <section id="publications-page" class="page">
-        <section class="section publications-page-section">
-          <div class="container">
-            <div class="page-heading">
-              <h1 class="page-title">Publications</h1>
-              <p class="page-description">
-                PLACEHOLDER_PUBLICATIONS_PAGE_DESCRIPTION
-              </p>
+      <!-- Block 2 -->
+      <section class="card" id="experience">
+        <div class="section-head">
+          <h2>Education & Experience</h2>
+        </div>
+
+        <div class="subsection">
+          <h3 class="subhead">Education</h3>
+
+          <div class="entry">
+            <div class="entry-main">
+              <div class="entry-title">PLACEHOLDER_EDU_SCHOOL_1</div>
+              <div class="entry-role">PLACEHOLDER_EDU_DEPARTMENT_1</div>
+              <div class="entry-desc">PLACEHOLDER_EDU_DEGREE_1</div>
             </div>
+            <div class="entry-date">PLACEHOLDER_EDU_DATE_1</div>
+          </div>
 
-            <div class="publication-list">
-              <article class="publication-card">
-                <div class="publication-image-wrap">
-                  <img
-                    src="https://via.placeholder.com/320x180?text=Paper+Image+1"
-                    alt="PLACEHOLDER_PAPER_TITLE_1 teaser"
-                    class="publication-image"
-                  />
-                </div>
-                <div class="publication-content">
-                  <h3 class="publication-title">
-                    PLACEHOLDER_PAPER_TITLE_1
-                  </h3>
-                  <p class="publication-authors">
-                    PLACEHOLDER_PAPER_AUTHORS_1
-                  </p>
-                  <p class="publication-venue">
-                    PLACEHOLDER_PAPER_VENUE_1
-                  </p>
-                  <p class="publication-summary">
-                    PLACEHOLDER_PAPER_SUMMARY_1. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit. Donec sed odio
-                    dui. Nullam quis risus eget urna mollis ornare vel
-                    eu leo.
-                  </p>
-                  <div class="publication-links">
-                    <a
-                      href="PLACEHOLDER_PAPER_LINK_1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Paper
-                    </a>
-                    <a
-                      href="PLACEHOLDER_CODE_LINK_1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Code
-                    </a>
-                    <a
-                      href="PLACEHOLDER_PROJECT_LINK_1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Project
-                    </a>
-                  </div>
-                </div>
-              </article>
+          <div class="entry">
+            <div class="entry-main">
+              <div class="entry-title">PLACEHOLDER_EDU_SCHOOL_2</div>
+              <div class="entry-role">PLACEHOLDER_EDU_DEPARTMENT_2</div>
+              <div class="entry-desc">PLACEHOLDER_EDU_DEGREE_2</div>
+            </div>
+            <div class="entry-date">PLACEHOLDER_EDU_DATE_2</div>
+          </div>
+        </div>
 
-              <article class="publication-card">
-                <div class="publication-image-wrap">
-                  <img
-                    src="https://via.placeholder.com/320x180?text=Paper+Image+2"
-                    alt="PLACEHOLDER_PAPER_TITLE_2 teaser"
-                    class="publication-image"
-                  />
-                </div>
-                <div class="publication-content">
-                  <h3 class="publication-title">
-                    PLACEHOLDER_PAPER_TITLE_2
-                  </h3>
-                  <p class="publication-authors">
-                    PLACEHOLDER_PAPER_AUTHORS_2
-                  </p>
-                  <p class="publication-venue">
-                    PLACEHOLDER_PAPER_VENUE_2
-                  </p>
-                  <p class="publication-summary">
-                    PLACEHOLDER_PAPER_SUMMARY_2. Cras mattis consectetur
-                    purus sit amet fermentum. Vestibulum id ligula porta
-                    felis euismod semper.
-                  </p>
-                  <div class="publication-links">
-                    <a
-                      href="PLACEHOLDER_PAPER_LINK_2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Paper
-                    </a>
-                    <a
-                      href="PLACEHOLDER_CODE_LINK_2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Code
-                    </a>
-                    <a
-                      href="PLACEHOLDER_PROJECT_LINK_2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Project
-                    </a>
-                  </div>
-                </div>
-              </article>
+        <div class="subsection subsection-divider">
+          <h3 class="subhead">Experience</h3>
 
-              <article class="publication-card">
-                <div class="publication-image-wrap">
-                  <img
-                    src="https://via.placeholder.com/320x180?text=Paper+Image+3"
-                    alt="PLACEHOLDER_PAPER_TITLE_3 teaser"
-                    class="publication-image"
-                  />
-                </div>
-                <div class="publication-content">
-                  <h3 class="publication-title">
-                    PLACEHOLDER_PAPER_TITLE_3
-                  </h3>
-                  <p class="publication-authors">
-                    PLACEHOLDER_PAPER_AUTHORS_3
-                  </p>
-                  <p class="publication-venue">
-                    PLACEHOLDER_PAPER_VENUE_3
-                  </p>
-                  <p class="publication-summary">
-                    PLACEHOLDER_PAPER_SUMMARY_3. Sed posuere consectetur
-                    est at lobortis. Praesent commodo cursus magna, vel
-                    scelerisque nisl consectetur et.
-                  </p>
-                  <div class="publication-links">
-                    <a
-                      href="PLACEHOLDER_PAPER_LINK_3"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Paper
-                    </a>
-                    <a
-                      href="PLACEHOLDER_CODE_LINK_3"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Code
-                    </a>
-                    <a
-                      href="PLACEHOLDER_PROJECT_LINK_3"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Project
-                    </a>
-                  </div>
-                </div>
-              </article>
+          <div class="entry">
+            <div class="entry-main">
+              <div class="entry-title">PLACEHOLDER_EXP_ORG_1</div>
+              <div class="entry-role">PLACEHOLDER_EXP_ROLE_1</div>
+              <div class="entry-desc">PLACEHOLDER_EXP_DESC_1</div>
+            </div>
+            <div class="entry-date">PLACEHOLDER_EXP_DATE_1</div>
+          </div>
 
-              <article class="publication-card">
-                <div class="publication-image-wrap">
-                  <img
-                    src="https://via.placeholder.com/320x180?text=Paper+Image+4"
-                    alt="PLACEHOLDER_PAPER_TITLE_4 teaser"
-                    class="publication-image"
-                  />
-                </div>
-                <div class="publication-content">
-                  <h3 class="publication-title">
-                    PLACEHOLDER_PAPER_TITLE_4
-                  </h3>
-                  <p class="publication-authors">
-                    PLACEHOLDER_PAPER_AUTHORS_4
-                  </p>
-                  <p class="publication-venue">
-                    PLACEHOLDER_PAPER_VENUE_4
-                  </p>
-                  <p class="publication-summary">
-                    PLACEHOLDER_PAPER_SUMMARY_4. Morbi leo risus, porta
-                    ac consectetur ac, vestibulum at eros.
-                  </p>
-                  <div class="publication-links">
-                    <a
-                      href="PLACEHOLDER_PAPER_LINK_4"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Paper
-                    </a>
-                    <a
-                      href="PLACEHOLDER_CODE_LINK_4"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Code
-                    </a>
-                    <a
-                      href="PLACEHOLDER_PROJECT_LINK_4"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Project
-                    </a>
-                  </div>
-                </div>
-              </article>
+          <div class="entry">
+            <div class="entry-main">
+              <div class="entry-title">PLACEHOLDER_EXP_ORG_2</div>
+              <div class="entry-role">PLACEHOLDER_EXP_ROLE_2</div>
+              <div class="entry-desc">PLACEHOLDER_EXP_DESC_2</div>
+            </div>
+            <div class="entry-date">PLACEHOLDER_EXP_DATE_2</div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-main">
+              <div class="entry-title">PLACEHOLDER_EXP_ORG_3</div>
+              <div class="entry-role">PLACEHOLDER_EXP_ROLE_3</div>
+              <div class="entry-desc">PLACEHOLDER_EXP_DESC_3</div>
+            </div>
+            <div class="entry-date">PLACEHOLDER_EXP_DATE_3</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Block 3 -->
+      <section class="card" id="publications">
+        <div class="section-head">
+          <h2>Selected Publications</h2>
+          <a class="muted" href="#publications-page">Full list →</a>
+        </div>
+
+        <div class="pub-card">
+          <div class="pub-thumb">
+            <img src="assets/paper1.jpg" alt="Paper 1 thumbnail" />
+          </div>
+          <div class="pub-body">
+            <div class="pub-title">PLACEHOLDER_PAPER_TITLE_1</div>
+            <div class="pub-meta">
+              <strong>PLACEHOLDER_NAME</strong>, PLACEHOLDER_COAUTHOR_1, PLACEHOLDER_COAUTHOR_2. PLACEHOLDER_VENUE_1, PLACEHOLDER_YEAR_1.
+            </div>
+            <div class="pub-abstract">
+              PLACEHOLDER_PAPER_SUMMARY_1. Replace this with a concise 1–3 sentence summary of the paper.
+            </div>
+            <div class="pub-links">
+              <a href="PLACEHOLDER_PAPER_LINK_1" target="_blank" rel="noopener noreferrer">paper</a>
+              <a href="PLACEHOLDER_CODE_LINK_1" target="_blank" rel="noopener noreferrer">code</a>
+              <a href="PLACEHOLDER_PROJECT_LINK_1" target="_blank" rel="noopener noreferrer">project</a>
             </div>
           </div>
-        </section>
+        </div>
+
+        <div class="pub-card">
+          <div class="pub-thumb">
+            <img src="assets/paper2.jpg" alt="Paper 2 thumbnail" />
+          </div>
+          <div class="pub-body">
+            <div class="pub-title">PLACEHOLDER_PAPER_TITLE_2</div>
+            <div class="pub-meta">
+              <strong>PLACEHOLDER_NAME</strong>, PLACEHOLDER_COAUTHOR_3. PLACEHOLDER_VENUE_2, PLACEHOLDER_YEAR_2.
+            </div>
+            <div class="pub-abstract">
+              PLACEHOLDER_PAPER_SUMMARY_2. Replace this with a concise 1–3 sentence summary of the paper.
+            </div>
+            <div class="pub-links">
+              <a href="PLACEHOLDER_PAPER_LINK_2" target="_blank" rel="noopener noreferrer">paper</a>
+              <a href="PLACEHOLDER_CODE_LINK_2" target="_blank" rel="noopener noreferrer">code</a>
+              <a href="PLACEHOLDER_PROJECT_LINK_2" target="_blank" rel="noopener noreferrer">project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <div class="pub-thumb">
+            <img src="assets/paper3.jpg" alt="Paper 3 thumbnail" />
+          </div>
+          <div class="pub-body">
+            <div class="pub-title">PLACEHOLDER_PAPER_TITLE_3</div>
+            <div class="pub-meta">
+              <strong>PLACEHOLDER_NAME</strong>, PLACEHOLDER_COAUTHOR_4, PLACEHOLDER_COAUTHOR_5. PLACEHOLDER_VENUE_3, PLACEHOLDER_YEAR_3.
+            </div>
+            <div class="pub-abstract">
+              PLACEHOLDER_PAPER_SUMMARY_3. Replace this with a concise 1–3 sentence summary of the paper.
+            </div>
+            <div class="pub-links">
+              <a href="PLACEHOLDER_PAPER_LINK_3" target="_blank" rel="noopener noreferrer">paper</a>
+              <a href="PLACEHOLDER_CODE_LINK_3" target="_blank" rel="noopener noreferrer">code</a>
+              <a href="PLACEHOLDER_PROJECT_LINK_3" target="_blank" rel="noopener noreferrer">project</a>
+            </div>
+          </div>
+        </div>
       </section>
-    </main>
 
-    <footer class="site-footer">
-      <div class="container footer-content">
-        <p>© PLACEHOLDER_NAME</p>
-        <p>Last updated: PLACEHOLDER_LAST_UPDATED</p>
-      </div>
-    </footer>
+      <footer class="footer">
+        <span>© <span id="year"></span> PLACEHOLDER_NAME</span>
+        <span class="dot">·</span>
+        <span class="muted">Updated: <span id="updated"></span></span>
+      </footer>
+    </section>
+  </main>
 
-    <script src="./assets/main.js"></script>
-  </body>
+  <!-- PUBLICATIONS PAGE -->
+  <main class="container publications-layout route-page hidden" id="publications-page-view">
+    <section class="publications-main">
+      <section class="card publications-hero">
+        <h1 class="page-title">Publications</h1>
+        <p class="lead">
+          PLACEHOLDER_PUBLICATIONS_PAGE_DESCRIPTION. Replace this with a short description for your full publication list.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="pub-list-page">
+          <div class="pub-card page-pub">
+            <div class="pub-thumb">
+              <img src="assets/paper1.jpg" alt="Paper 1 thumbnail" />
+            </div>
+            <div class="pub-body">
+              <div class="pub-title">PLACEHOLDER_PAPER_TITLE_1</div>
+              <div class="pub-meta">
+                <strong>PLACEHOLDER_NAME</strong>, PLACEHOLDER_COAUTHOR_1, PLACEHOLDER_COAUTHOR_2. PLACEHOLDER_VENUE_1, PLACEHOLDER_YEAR_1.
+              </div>
+              <div class="pub-abstract">
+                PLACEHOLDER_PAPER_SUMMARY_1. Replace this with a slightly longer paper description if you want.
+              </div>
+              <div class="pub-links">
+                <a href="PLACEHOLDER_PAPER_LINK_1" target="_blank" rel="noopener noreferrer">paper</a>
+                <a href="PLACEHOLDER_CODE_LINK_1" target="_blank" rel="noopener noreferrer">code</a>
+                <a href="PLACEHOLDER_PROJECT_LINK_1" target="_blank" rel="noopener noreferrer">project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-card page-pub">
+            <div class="pub-thumb">
+              <img src="assets/paper2.jpg" alt="Paper 2 thumbnail" />
+            </div>
+            <div class="pub-body">
+              <div class="pub-title">PLACEHOLDER_PAPER_TITLE_2</div>
+              <div class="pub-meta">
+                <strong>PLACEHOLDER_NAME</strong>, PLACEHOLDER_COAUTHOR_3. PLACEHOLDER_VENUE_2, PLACEHOLDER_YEAR_2.
+              </div>
+              <div class="pub-abstract">
+                PLACEHOLDER_PAPER_SUMMARY_2. Replace this with a slightly longer paper description if you want.
+              </div>
+              <div class="pub-links">
+                <a href="PLACEHOLDER_PAPER_LINK_2" target="_blank" rel="noopener noreferrer">paper</a>
+                <a href="PLACEHOLDER_CODE_LINK_2" target="_blank" rel="noopener noreferrer">code</a>
+                <a href="PLACEHOLDER_PROJECT_LINK_2" target="_blank" rel="noopener noreferrer">project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-card page-pub">
+            <div class="pub-thumb">
+              <img src="assets/paper3.jpg" alt="Paper 3 thumbnail" />
+            </div>
+            <div class="pub-body">
+              <div class="pub-title">PLACEHOLDER_PAPER_TITLE_3</div>
+              <div class="pub-meta">
+                <strong>PLACEHOLDER_NAME</strong>, PLACEHOLDER_COAUTHOR_4, PLACEHOLDER_COAUTHOR_5. PLACEHOLDER_VENUE_3, PLACEHOLDER_YEAR_3.
+              </div>
+              <div class="pub-abstract">
+                PLACEHOLDER_PAPER_SUMMARY_3. Replace this with a slightly longer paper description if you want.
+              </div>
+              <div class="pub-links">
+                <a href="PLACEHOLDER_PAPER_LINK_3" target="_blank" rel="noopener noreferrer">paper</a>
+                <a href="PLACEHOLDER_CODE_LINK_3" target="_blank" rel="noopener noreferrer">code</a>
+                <a href="PLACEHOLDER_PROJECT_LINK_3" target="_blank" rel="noopener noreferrer">project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-card page-pub">
+            <div class="pub-thumb">
+              <img src="assets/paper4.jpg" alt="Paper 4 thumbnail" />
+            </div>
+            <div class="pub-body">
+              <div class="pub-title">PLACEHOLDER_PAPER_TITLE_4</div>
+              <div class="pub-meta">
+                <strong>PLACEHOLDER_NAME</strong>, PLACEHOLDER_COAUTHOR_6. PLACEHOLDER_VENUE_4, PLACEHOLDER_YEAR_4.
+              </div>
+              <div class="pub-abstract">
+                PLACEHOLDER_PAPER_SUMMARY_4. Replace this with a slightly longer paper description if you want.
+              </div>
+              <div class="pub-links">
+                <a href="PLACEHOLDER_PAPER_LINK_4" target="_blank" rel="noopener noreferrer">paper</a>
+                <a href="PLACEHOLDER_CODE_LINK_4" target="_blank" rel="noopener noreferrer">code</a>
+                <a href="PLACEHOLDER_PROJECT_LINK_4" target="_blank" rel="noopener noreferrer">project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer pub-footer">
+        <span>© <span id="year-2"></span> PLACEHOLDER_NAME</span>
+        <span class="dot">·</span>
+        <span class="muted">Updated: <span id="updated-2"></span></span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="assets/main.js"></script>
+</body>
 </html>
